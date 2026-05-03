@@ -1,53 +1,163 @@
-🚀 Fixora-X
+# 🚗 Fixora-X
 
-Fixing Life, One Service at a Time
+Fixora-X is a smart service-booking and mechanic discovery platform designed to bridge the gap between customers facing urgent vehicle/service issues and trusted local mechanics.
 
-📌 Overview
+The platform helps users quickly find nearby mechanics, compare service providers, book appointments, and access transparent service details — all in one place.
 
-Fixora-X is a modern web-based platform designed to help users easily find and connect with trusted local service providers like electricians, plumbers, and technicians.
+---
 
-The goal is to simplify everyday problems by providing a clean, fast, and reliable service discovery experience.
+## 📌 Problem Statement
 
-✨ Features
-🔍 Search for nearby service providers
-📂 Filter by category, rating, and availability
-🧑‍🔧 View professional profiles
-🎯 Clean and user-friendly UI
-📱 Responsive design (planned/improving)
-⭐ Focus on trust and transparency
-🛠️ Tech Stack
-HTML5 – Structure
-CSS3 – Styling & layout
-JavaScript – Functionality
-📁 Project Structure
-Fixora-X/
-│── index.html
-│── css/
-│   └── style.css
-│── js/
-│   └── script.js
-│── assets/
-│   ├── images/
-│   └── icons/
+Finding a trustworthy mechanic during emergencies or routine servicing is often frustrating because:
 
-(Modify this if your folder structure is slightly different)
+- Customers don’t know which mechanic is reliable
+- No centralized platform for comparing services
+- Lack of pricing transparency
+- Difficult to locate nearby mechanics quickly
+- Poor communication between mechanics and customers
 
-🚀 Getting Started
-1. Clone the repository
+Fixora-X solves these challenges by digitizing mechanic discovery and booking.
+
+---
+
+## 🎯 Project Objective
+
+To create a seamless digital ecosystem where:
+
+- Customers can discover nearby verified mechanics
+- Mechanics can showcase their services online
+- Service booking becomes faster and more transparent
+- Communication between mechanics and customers improves
+
+---
+
+## ✨ Key Features
+
+### 👤 Customer Features
+- User Registration & Login
+- Browse nearby mechanics
+- Search & filter mechanics
+- View mechanic profiles
+- Book repair/service appointments
+- Track booking details
+- Contact mechanics directly
+
+### 🔧 Mechanic Features
+- Mechanic registration
+- Profile management
+- Service listing
+- Availability management
+- Booking management dashboard
+- Customer request handling
+
+### 📍 Smart Features
+- Location-based mechanic discovery
+- Rating/review system
+- Service categorization
+- Real-time booking workflow
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Authentication
+- JWT Authentication
+- bcrypt password hashing
+
+### Other Tools
+- Git & GitHub
+- VS Code
+
+---
+
+## 🔄 Workflow
+
+### Customer Side
+1. User logs in/registers
+2. Searches nearby mechanics
+3. Views profiles/services
+4. Books appointment
+5. Connects with mechanic
+
+### Mechanic Side
+1. Mechanic registers
+2. Adds service details
+3. Receives booking requests
+4. Accepts/rejects bookings
+5. Provides service
+
+---
+
+## 🌍 Real-World Use Cases
+
+### Emergency Breakdown Assistance
+Users can instantly find nearby mechanics when their vehicle breaks down.
+
+### Routine Vehicle Servicing
+Book regular maintenance without visiting multiple garages.
+
+### Digital Mechanic Marketplace
+Local mechanics get online visibility and more customers.
+
+### Trust Building
+Users choose verified mechanics with ratings and reviews.
+
+---
+
+## 🤝 How Fixora-X Connects Mechanics & Customers
+
+Fixora-X acts as a digital bridge:
+
+### For Customers
+- Faster mechanic discovery
+- Better trust through profiles & reviews
+- Reduced search effort
+- Easy booking
+
+### For Mechanics
+- Online presence
+- More customer reach
+- Booking management
+- Business growth opportunities
+
+---
+
+## 🚀 Installation
+
+Clone repository:
+
+```bash
 git clone https://github.com/DeepVegad143/Fixora-X.git
-2. Open the project
-Navigate to the folder
-Open index.html in your browser
-🎯 Use Case
+```
 
-Fixora-X helps users:
+Run project:
 
-Quickly find trusted professionals
-Avoid unreliable service providers
-Save time in urgent situations
-🚧 Future Enhancements
-🔐 User Authentication system
-📅 Booking & scheduling system
-⭐ Ratings & reviews
-📊 Service provider dashboard
-🌐 Full-stack integration (backend + database)
+```bash
+    Frontend : npm start
+    Backend : npm run dev
+```
+---
+
+## 👨‍💻 Author
+
+**Deep Vegad**
+
+GitHub: https://github.com/DeepVegad143
+
+---
+
+## 📜 License
+
+This project is created for academic and learning purposes.
