@@ -1,5 +1,5 @@
 {
-  "name": "roadguard-backend",
+  "name": "fixora-x-backend",
   "version": "1.0.0",
   "description": "Real-time roadside assistance platform backend",
   "main": "server.js",
@@ -23,7 +23,7 @@
     "socket.io",
     "hackathon"
   ],
-  "author": "RoadGuard Team",
+  "author": "Fixora-X Team",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

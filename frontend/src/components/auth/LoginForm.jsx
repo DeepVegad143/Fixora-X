@@ -102,10 +102,10 @@ const LoginForm = () => {
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-primary-600">
-            <span className="text-2xl font-bold text-white">R</span>
+            <span className="text-2xl font-bold text-white">F</span>
           </div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-secondary-900">
-            Sign in to RoadGuard
+            Sign in to Fixora-X
           </h2>
           <p className="mt-2 text-center text-sm text-secondary-600">
             Don't have an account?{' '}
@@ -190,9 +190,9 @@ const LoginForm = () => {
           <div className="text-sm text-secondary-600">
             <p className="font-medium mb-2">Demo Accounts:</p>
             <div className="space-y-1 text-xs">
-              <p><strong>Customer:</strong> john.doe@example.com / Customer123!</p>
-              <p><strong>Mechanic:</strong> rajesh.kumar@roadguard.com / Mechanic123!</p>
-              <p><strong>Admin:</strong> admin@roadguard.com / Admin123!</p>
+              <p><strong>Customer:</strong> demouser@fixorax.com / Demo123!</p>
+              <p><strong>Mechanic:</strong> demomech@fixorax.com / DemoMac123!</p>
+              <p><strong>Admin:</strong> admin@fixorax.com / Admin123!</p>
             </div>
           </div>
         </div>

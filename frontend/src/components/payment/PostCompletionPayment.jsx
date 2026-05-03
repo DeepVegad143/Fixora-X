@@ -61,7 +61,7 @@ const PostCompletionPayment = ({ serviceRequest, onPaymentSuccess, onClose }) =>
       key: paymentData.razorpayKey,
       amount: paymentData.amount * 100, // Convert to paise
       currency: paymentData.currency,
-      name: 'RoadGuard',
+      name: 'Fixora-X',
       description: `Payment for ${serviceRequest.issueType.replace('_', ' ')} service`,
       order_id: paymentData.razorpayOrderId,
       handler: function (response) {
@@ -108,7 +108,7 @@ const PostCompletionPayment = ({ serviceRequest, onPaymentSuccess, onClose }) =>
         const result = await response.json();
         if (result.success) {
           setPaymentStatus('success');
-          toast.success('Payment successful! Thank you for using RoadGuard.');
+          toast.success('Payment successful! Thank you for using Fixora-X.');
           if (onPaymentSuccess) {
             onPaymentSuccess(result.data);
           }

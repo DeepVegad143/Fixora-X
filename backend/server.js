@@ -4,6 +4,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const app = require('./app');
 const { connectDB } = require('./src/config/database');
+const seedDemoUsers = require('./src/utils/seedDemo');
 const logger = require('./src/config/logger');
 const { gracefulShutdown } = require('./src/middlewares/errorMiddleware');
 
@@ -52,11 +53,14 @@ app.set('io', io);
 app.set('socketHandlers', socketHandlers);
 
 // Connect to Database
-connectDB().then(() => {
+connectDB().then(async () => {
+  // Seed demo users
+  await seedDemoUsers();
+
   const PORT = process.env.PORT || 4000;
   
   server.listen(PORT, () => {
-    logger.info(`🚀 RoadGuard API Server running on port ${PORT}`);
+    logger.info(`🚀 Fixora-X API Server running on port ${PORT}`);
     logger.info(`📚 API Documentation available at http://localhost:${PORT}/api-docs`);
     logger.info(`🏥 Health check available at http://localhost:${PORT}/health`);
     logger.info(`🌍 Environment: ${process.env.NODE_ENV}`);

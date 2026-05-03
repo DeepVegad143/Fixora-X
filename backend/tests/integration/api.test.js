@@ -5,7 +5,7 @@ const app = require('../../server');
 // Test database connection
 const TEST_DB_URI = process.env.TEST_MONGODB_URI || process.env.MONGODB_URI;
 
-describe('RoadGuard API Integration Tests', () => {
+describe('Fixora-X API Integration Tests', () => {
   let server;
   let customerToken;
   let mechanicToken;
@@ -43,7 +43,7 @@ describe('RoadGuard API Integration Tests', () => {
         .expect(200);
 
       expect(response.body).toHaveProperty('success', true);
-      expect(response.body).toHaveProperty('message', 'RoadGuard API is running');
+      expect(response.body).toHaveProperty('message', 'Fixora-X API is running');
       expect(response.body).toHaveProperty('timestamp');
       expect(response.body).toHaveProperty('environment', 'development');
     });

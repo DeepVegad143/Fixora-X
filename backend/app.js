@@ -119,7 +119,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.get('/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'RoadGuard API is running',
+    message: 'Fixora-X API is running',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV,
     version: '1.0.0'
@@ -130,7 +130,7 @@ app.get('/health', (req, res) => {
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
   explorer: true,
   customCss: '.swagger-ui .topbar { display: none }',
-  customSiteTitle: 'RoadGuard API Documentation',
+  customSiteTitle: 'Fixora-X API Documentation',
   swaggerOptions: {
     persistAuthorization: true,
     displayRequestDuration: true,
@@ -154,7 +154,7 @@ app.use('/api/reviews', reviewRoutes);
 app.get('/', (req, res) => {
   res.json({
     success: true,
-    message: 'Welcome to RoadGuard API',
+    message: 'Welcome to Fixora-X API',
     version: '1.0.0',
     documentation: '/api-docs',
     endpoints: {

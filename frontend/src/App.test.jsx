@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders welcome message', () => {
   render(<App />);
-  const linkElement = screen.getByText(/roadguard/i);
+  const linkElement = screen.getByText(/fixora-x/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -30,7 +30,7 @@ router.post('/verification',
   uploadMiddleware.fields([
     { name: 'shopImage', maxCount: 1 },
     { name: 'documentImage', maxCount: 1 }
-  ], { folder: 'roadguard/mechanic-verification' }),
+  ], { folder: 'fixora-x/mechanic-verification' }),
   validate(schemas.submitVerification),
   mechanicVerificationController.submitVerification
 );
@@ -61,7 +61,7 @@ router.put('/verification',
   uploadMiddleware.fields([
     { name: 'shopImage', maxCount: 1 },
     { name: 'documentImage', maxCount: 1 }
-  ], { folder: 'roadguard/mechanic-verification' }),
+  ], { folder: 'fixora-x/mechanic-verification' }),
   validate(schemas.updateVerification),
   mechanicVerificationController.updateVerification
 );

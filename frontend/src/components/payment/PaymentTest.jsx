@@ -28,8 +28,8 @@ const PaymentTest = () => {
             key: response.data.razorpayKey || 'rzp_test_CjxI6ZFqFKX7Xs',
             amount: response.data.amount * 100,
             currency: response.data.currency,
-            name: 'RoadGuard Test',
-            description: 'Test payment for RoadGuard',
+            name: 'Fixora-X Test',
+            description: 'Test payment for Fixora-X',
             order_id: response.data.razorpayOrderId,
             handler: function (paymentResponse) {
               console.log('Test payment successful:', paymentResponse);

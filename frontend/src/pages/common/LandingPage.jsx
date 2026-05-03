@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  WrenchScrewdriverIcon, 
-  MapPinIcon, 
+import {
+  WrenchScrewdriverIcon,
+  MapPinIcon,
   ClockIcon,
   ShieldCheckIcon,
   UserGroupIcon,
@@ -48,12 +48,12 @@ const LandingPage = () => {
     {
       name: 'John Doe',
       role: 'Customer',
-      content: 'RoadGuard saved my day when I had a flat tire on the highway. Quick response and professional service!',
+      content: 'Fixora-X saved my day when I had a flat tire on the highway. Quick response and professional service!',
       rating: 5
     },
     {
       name: 'Sarah Wilson',
-      role: 'Customer', 
+      role: 'Customer',
       content: 'Amazing app! The real-time tracking feature gave me peace of mind while waiting for help.',
       rating: 5
     },
@@ -73,9 +73,9 @@ const LandingPage = () => {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <div className="h-10 w-10 bg-primary-600 rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold text-white">R</span>
+                <span className="text-xl font-bold text-white">F</span>
               </div>
-              <span className="ml-3 text-2xl font-bold text-secondary-900">RoadGuard</span>
+              <span className="ml-3 text-2xl font-bold text-secondary-900">Fixora-X</span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#features" className="text-secondary-600 hover:text-primary-600">Features</a>
@@ -102,7 +102,7 @@ const LandingPage = () => {
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <div className="animate-fade-in-up">
@@ -110,11 +110,11 @@ const LandingPage = () => {
                 Your Trusted <span className="text-primary-200 animate-pulse">Roadside</span> Companion
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-primary-100 max-w-4xl mx-auto leading-relaxed">
-                Get instant help when you need it most. Connect with verified mechanics for quick, 
+                Get instant help when you need it most. Connect with verified mechanics for quick,
                 reliable roadside assistance wherever you are, 24/7.
               </p>
             </div>
-            
+
             <div className="animate-fade-in-up animation-delay-200">
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Link to="/register?role=customer">
@@ -128,7 +128,7 @@ const LandingPage = () => {
                   </Button>
                 </Link>
               </div>
-              
+
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
                 <div className="text-center">
@@ -147,7 +147,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Floating Icons */}
         <div className="absolute top-20 left-10 animate-bounce">
           <WrenchScrewdriverIcon className="h-8 w-8 text-primary-300 opacity-50" />
@@ -165,14 +165,14 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
-              Why Choose RoadGuard?
+              Why Choose Fixora-X?
             </h2>
             <p className="text-xl text-secondary-600 max-w-2xl mx-auto">
-              We provide comprehensive roadside assistance with cutting-edge technology 
+              We provide comprehensive roadside assistance with cutting-edge technology
               and a network of trusted professionals.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white rounded-lg p-8 shadow-card hover:shadow-card-hover transition-shadow">
@@ -196,7 +196,7 @@ const LandingPage = () => {
               Get help in just a few simple steps
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">
@@ -207,7 +207,7 @@ const LandingPage = () => {
                 Describe your issue and share your location. Our system will find nearby mechanics.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">
                 2
@@ -217,7 +217,7 @@ const LandingPage = () => {
                 A verified mechanic accepts your request and provides an estimated arrival time.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">
                 3
@@ -242,7 +242,7 @@ const LandingPage = () => {
               Trusted by thousands of customers and mechanics
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white rounded-lg p-6 shadow-card">
@@ -292,12 +292,12 @@ const LandingPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <div className="h-8 w-8 bg-primary-600 rounded-full flex items-center justify-center">
-                <span className="text-lg font-bold text-white">R</span>
+                <span className="text-lg font-bold text-white">F</span>
               </div>
-              <span className="ml-3 text-xl font-bold">RoadGuard</span>
+              <span className="ml-3 text-xl font-bold">Fixora-X</span>
             </div>
             <div className="text-secondary-400">
-              <p>&copy; 2024 RoadGuard. All rights reserved.</p>
+              <p>&copy; 2026 Fixora-X. All rights reserved.</p>
             </div>
           </div>
         </div>

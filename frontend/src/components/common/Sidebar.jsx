@@ -32,9 +32,9 @@ const Sidebar = ({ navigationItems }) => {
       <div className="p-6">
         <div className="flex items-center">
           <div className="h-8 w-8 bg-primary-600 rounded-full flex items-center justify-center">
-            <span className="text-lg font-bold text-white">R</span>
+            <span className="text-lg font-bold text-white">F</span>
           </div>
-          <span className="ml-3 text-xl font-bold text-secondary-900">RoadGuard</span>
+          <span className="ml-3 text-xl font-bold text-secondary-900">Fixora-X</span>
         </div>
       </div>
       

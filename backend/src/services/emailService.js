@@ -79,11 +79,11 @@ class EmailService {
 
       const mailOptions = {
         from: {
-          name: 'RoadGuard Support',
+          name: 'Fixora-X Support',
           address: process.env.EMAIL_USER
         },
         to: email,
-        subject: 'RoadGuard - Email Verification OTP',
+        subject: 'Fixora-X - Email Verification OTP',
         html: this.generateOTPEmailTemplate(otp, userName)
       };
 
@@ -117,7 +117,7 @@ class EmailService {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RoadGuard Email Verification</title>
+        <title>Fixora-X Email Verification</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -174,17 +174,17 @@ class EmailService {
     <body>
         <div class="container">
             <div class="header">
-                <div class="logo">🚗 RoadGuard</div>
+                <div class="logo">🚗 Fixora-X</div>
                 <h2>Email Verification Required</h2>
             </div>
             
             <p>Hello ${userName},</p>
             
-            <p>You have successfully logged into your RoadGuard account. To complete the login process, please verify your email address using the OTP code below:</p>
+            <p>You have successfully logged into your Fixora-X account. To complete the login process, please verify your email address using the OTP code below:</p>
             
             <div class="otp-code">${otp}</div>
             
-            <p>Enter this code in the RoadGuard app to complete your login.</p>
+            <p>Enter this code in the Fixora-X app to complete your login.</p>
             
             <div class="warning">
                 <strong>⚠️ Security Notice:</strong>
@@ -199,7 +199,7 @@ class EmailService {
             
             <div class="footer">
                 <p>Best regards,<br>
-                The RoadGuard Team</p>
+                The Fixora-X Team</p>
                 <p><small>This is an automated email. Please do not reply to this message.</small></p>
             </div>
         </div>
@@ -212,11 +212,11 @@ class EmailService {
     try {
       const mailOptions = {
         from: {
-          name: 'RoadGuard Support',
+          name: 'Fixora-X Support',
           address: process.env.EMAIL_USER
         },
         to: email,
-        subject: 'Welcome to RoadGuard!',
+        subject: 'Welcome to Fixora-X!',
         html: this.generateWelcomeEmailTemplate(userName)
       };
 
@@ -245,7 +245,7 @@ class EmailService {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to RoadGuard</title>
+        <title>Welcome to Fixora-X</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -284,15 +284,15 @@ class EmailService {
     <body>
         <div class="container">
             <div class="header">
-                <div class="logo">🚗 RoadGuard</div>
-                <h2>Welcome to RoadGuard!</h2>
+                <div class="logo">🚗 Fixora-X</div>
+                <h2>Welcome to Fixora-X!</h2>
             </div>
             
             <p>Hello ${userName},</p>
             
-            <p>Welcome to RoadGuard - your trusted roadside assistance partner! We're excited to have you on board.</p>
+            <p>Welcome to Fixora-X - your trusted roadside assistance partner! We're excited to have you on board.</p>
             
-            <h3>What you can do with RoadGuard:</h3>
+            <h3>What you can do with Fixora-X:</h3>
             
             <div class="feature">
                 <strong>🔧 Quick Service Requests</strong><br>
@@ -320,7 +320,7 @@ class EmailService {
             
             <div style="text-align: center; margin-top: 30px;">
                 <p>Best regards,<br>
-                The RoadGuard Team</p>
+                The Fixora-X Team</p>
             </div>
         </div>
     </body>

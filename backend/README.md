@@ -1,4 +1,4 @@
-# 🛡️ RoadGuard Backend API
+# 🛡️ Fixora-X Backend API
 
 **Professional Roadside Assistance Platform** - A comprehensive, production-ready Node.js backend for connecting customers with mechanics for real-time vehicle services.
 
@@ -14,7 +14,7 @@
 ```bash
 # Clone and install
 git clone <repository-url>
-cd roadguard/backend
+cd fixora-x/backend
 npm install
 
 # Environment setup
@@ -176,7 +176,7 @@ backend/
 ### 1. Clone & Install
 ```bash
 git clone <repository-url>
-cd roadguard/backend
+cd Fixora-X/backend
 npm install
 ```
 
@@ -195,7 +195,7 @@ PORT=4000
 NODE_ENV=development
 
 # Database Configuration
-MONGODB_URI=mongodb://localhost:27017/roadguard
+MONGODB_URI=mongodb://localhost:27017/fixora-x
 
 # JWT Authentication
 JWT_SECRET=your_super_secret_jwt_key_here_make_it_very_long_and_secure
@@ -208,7 +208,7 @@ EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_gmail_app_password
-EMAIL_FROM_NAME=RoadGuard Support
+EMAIL_FROM_NAME=Fixora-X Support
 EMAIL_FROM_ADDRESS=your_email@gmail.com
 EMAIL_SERVICE=gmail
 EMAIL_SECURE=false
@@ -522,32 +522,26 @@ npm run seed:demo
 ### Demo User Accounts
 
 **Admin Account:**
-- Email: `admin@roadguard.com`
+- Email: `admin@fixorax.com`
 - Password: `Admin123!`
 - Access: Full system administration
 
-**Customer Accounts:**
-- Email: `john.doe@example.com` / Password: `Customer123!`
-- Email: `sarah.wilson@example.com` / Password: `Customer123!`
-- Email: `mike.brown@example.com` / Password: `Customer123!`
+**Customer Account:**
+- Email: `demouser@fixorax.com`
+- Password: `Demo123!`
 
-**Mechanic Accounts:**
-- Email: `rajesh.kumar@roadguard.com` / Password: `Mechanic123!`
-  - Specialization: Engine & Transmission
-  - Location: Delhi NCR
-- Email: `amit.sharma@roadguard.com` / Password: `Mechanic123!`
-  - Specialization: Electrical & Battery
-  - Location: Mumbai
-- Email: `pradeep.singh@roadguard.com` / Password: `Mechanic123!`
-  - Specialization: Tires & Brakes
-  - Location: Bangalore
+**Mechanic Account:**
+- Email: `demomech@fixorax.com`
+- Password: `DemoMac123!`
+  - Specialization: General Repairs
+  - Status: Pre-approved for demo
 
 ### API Testing with Postman
 
 **Import Collection:**
 ```bash
 # Download Postman collection
-curl -o roadguard-api.json http://localhost:4000/api/postman-collection
+curl -o Fixora-X-api.json http://localhost:4000/api/postman-collection
 ```
 
 **Test Sequence:**
@@ -609,7 +603,7 @@ Professional HTML email with:
 ### Environment Variables for Production
 ```env
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/roadguard
+MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/Fixora-X
 FRONTEND_URL=https://your-domain.com
 EMAIL_USER=production-email@yourdomain.com
 EMAIL_PASS=production-app-password
@@ -898,7 +892,7 @@ This project is licensed under the MIT License.
 
 This backend provides everything needed for a complete roadside assistance platform with enterprise-grade security, real-time features, and comprehensive API coverage. Perfect for building modern web and mobile applications!
 
-Made with ❤️ for **RoadGuard** - *Your trusted roadside companion*
+Made with ❤️ for **Fixora-X** - *Your trusted roadside companion*
 
 - **Runtime**: Node.js
 - **Framework**: Express.js
@@ -979,7 +973,7 @@ backend/
 ### 1. Clone & Install
 ```bash
 git clone <repository-url>
-cd roadguard/backend
+cd Fixora-X/backend
 npm install
 ```
 
@@ -996,7 +990,7 @@ PORT=4000
 NODE_ENV=development
 
 # Database
-MONGODB_URI=mongodb://localhost:27017/roadguard
+MONGODB_URI=mongodb://localhost:27017/Fixora-X
 
 # JWT Configuration
 JWT_ACCESS_SECRET=your_access_token_secret_here
@@ -1121,7 +1115,7 @@ npm run seed
 ### Demo User Accounts
 
 **Admin:**
-- Email: `admin@roadguard.com`
+- Email: `admin@Fixora-X.com`
 - Password: `Admin123!`
 
 **Customers:**
@@ -1130,17 +1124,17 @@ npm run seed
 - Email: `mike@example.com` / Password: `Customer123!`
 
 **Mechanics:**
-- Email: `rajesh@roadguard.com` / Password: `Mechanic123!`
-- Email: `amit@roadguard.com` / Password: `Mechanic123!`
-- Email: `pradeep@roadguard.com` / Password: `Mechanic123!`
-- Email: `vikram@roadguard.com` / Password: `Mechanic123!`
+- Email: `rajesh@Fixora-X.com` / Password: `Mechanic123!`
+- Email: `amit@Fixora-X.com` / Password: `Mechanic123!`
+- Email: `pradeep@Fixora-X.com` / Password: `Mechanic123!`
+- Email: `vikram@Fixora-X.com` / Password: `Mechanic123!`
 
 ## 🚀 Deployment
 
 ### Environment Variables for Production
 ```env
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/roadguard
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/Fixora-X
 CLIENT_URL=https://your-frontend-domain.com
 ```
 
@@ -1158,7 +1152,7 @@ CMD ["npm", "start"]
 ### Heroku Deployment
 ```bash
 # Install Heroku CLI and login
-heroku create roadguard-backend
+heroku create Fixora-X-backend
 heroku config:set NODE_ENV=production
 heroku config:set MONGODB_URI=your_mongodb_uri
 # ... set other environment variables
@@ -1197,7 +1191,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Support
 
 For support and queries:
-- Email: support@roadguard.com
+- Email: support@Fixora-X.com
 - Documentation: [API Docs](http://localhost:4000/api-docs)
 - Issues: GitHub Issues
 
@@ -1216,5 +1210,5 @@ This backend is specifically designed for hackathon demonstrations:
 
 ---
 
-Made with ❤️ for **RoadGuard** - *Your trusted roadside companion*
+Made with ❤️ for **Fixora-X** - *Your trusted roadside companion*
 # team-38-DOMinators-Odoo-X-CGC

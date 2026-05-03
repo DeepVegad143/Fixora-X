@@ -56,7 +56,7 @@ const PaymentModal = ({
         key: 'rzp_test_51O8X8X8X8X8X8', // Test key for development
         amount: orderData.amount,
         currency: orderData.currency || 'INR',
-        name: 'RoadGuard',
+        name: 'Fixora-X',
         description: 'Service Payment',
         order_id: orderData.orderId,
         handler: function (response) {

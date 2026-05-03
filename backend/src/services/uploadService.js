@@ -102,7 +102,7 @@ class UploadService {
   async uploadImageToCloudinary(filePath, options = {}) {
     try {
       const {
-        folder = 'roadguard',
+        folder = 'fixora-x',
         transformation = { quality: 'auto', fetch_format: 'auto' },
         tags = []
       } = options;
@@ -192,7 +192,7 @@ class UploadService {
   async uploadServiceRequestImages(files, requestId) {
     try {
       const options = {
-        folder: `roadguard/service-requests/${requestId}`,
+        folder: `fixora-x/service-requests/${requestId}`,
         tags: ['service_request', requestId.toString()],
         transformation: {
           quality: 'auto',
@@ -221,7 +221,7 @@ class UploadService {
   async uploadProfilePicture(file, userId) {
     try {
       const options = {
-        folder: `roadguard/profiles/${userId}`,
+        folder: `fixora-x/profiles/${userId}`,
         tags: ['profile_picture', userId.toString()],
         transformation: {
           quality: 'auto',

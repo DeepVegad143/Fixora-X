@@ -54,7 +54,7 @@ const uploadToCloudinary = (buffer, options = {}) => {
     const uploadStream = cloudinary.uploader.upload_stream(
       {
         resource_type: 'image',
-        folder: options.folder || 'roadguard',
+        folder: options.folder || 'fixora-x',
         public_id: options.public_id,
         transformation: options.transformation
       },
@@ -83,7 +83,7 @@ const uploadToCloudinaryMiddleware = (options = {}) => {
       if (req.file) {
         // Single file upload
         const result = await uploadToCloudinary(req.file.buffer, {
-          folder: options.folder || 'roadguard',
+          folder: options.folder || 'fixora-x',
           public_id: options.generatePublicId ? options.generatePublicId(req.file) : undefined
         });
         
@@ -98,7 +98,7 @@ const uploadToCloudinaryMiddleware = (options = {}) => {
         
         for (const file of files) {
           const result = await uploadToCloudinary(file.buffer, {
-            folder: options.folder || 'roadguard',
+            folder: options.folder || 'fixora-x',
             public_id: options.generatePublicId ? options.generatePublicId(file) : undefined
           });
           
@@ -173,17 +173,17 @@ module.exports = {
   ],
   profilePicture: [
     upload.single('profilePicture'), 
-    uploadToCloudinaryMiddleware({ folder: 'roadguard/profiles' }),
+    uploadToCloudinaryMiddleware({ folder: 'fixora-x/profiles' }),
     handleUploadError
   ],
   vehicleImages: [
     upload.array('images', 5), 
-    uploadToCloudinaryMiddleware({ folder: 'roadguard/vehicles' }),
+    uploadToCloudinaryMiddleware({ folder: 'fixora-x/vehicles' }),
     handleUploadError
   ],
   serviceImages: [
     upload.array('images', 10), 
-    uploadToCloudinaryMiddleware({ folder: 'roadguard/services' }),
+    uploadToCloudinaryMiddleware({ folder: 'fixora-x/services' }),
     handleUploadError
   ],
   uploadToCloudinary,

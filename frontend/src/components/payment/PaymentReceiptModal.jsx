@@ -39,7 +39,7 @@ const PaymentReceiptModal = ({ isOpen, onClose, payment }) => {
         heightLeft -= pageHeight;
       }
       
-      pdf.save(`roadguard-receipt-${payment._id}.pdf`);
+      pdf.save(`fixora-x-receipt-${payment._id}.pdf`);
       toast.success('Receipt downloaded successfully!');
     } catch (error) {
       console.error('Error generating PDF:', error);
@@ -154,10 +154,10 @@ const PaymentReceiptModal = ({ isOpen, onClose, payment }) => {
               <div className="text-center mb-6">
                 <div className="flex items-center justify-center mb-4">
                   <div className="h-12 w-12 bg-primary-600 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">R</span>
+                    <span className="text-2xl font-bold text-white">F</span>
                   </div>
                 </div>
-                <h1 className="text-2xl font-bold text-secondary-900">RoadGuard</h1>
+                <h1 className="text-2xl font-bold text-secondary-900">Fixora-X</h1>
                 <p className="text-sm text-secondary-600">Payment Receipt</p>
               </div>
 
@@ -298,10 +298,10 @@ const PaymentReceiptModal = ({ isOpen, onClose, payment }) => {
               {/* Footer */}
               <div className="mt-8 pt-6 border-t border-secondary-200 text-center">
                 <p className="text-sm text-secondary-600 mb-2">
-                  Thank you for using RoadGuard!
+                  Thank you for using Fixora-X!
                 </p>
                 <p className="text-xs text-secondary-500">
-                  For support, contact us at support@roadguard.com or call +91-XXXX-XXXXXX
+                  For support, contact us at support@fixora-x.com or call +91-XXXX-XXXXXX
                 </p>
                 <p className="text-xs text-secondary-500 mt-2">
                   This is a computer-generated receipt and does not require a signature.

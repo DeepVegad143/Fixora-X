@@ -134,7 +134,7 @@ const UnifiedPaymentModal = ({
         key: orderData.razorpayKey || process.env.REACT_APP_RAZORPAY_KEY_ID || 'rzp_test_CjxI6ZFqFKX7Xs',
         amount: orderData.amount * 100, // Convert to paise
         currency: orderData.currency || 'INR',
-        name: 'RoadGuard',
+        name: 'Fixora-X',
         description: `Payment for ${serviceRequest.issueType?.replace('_', ' ') || 'roadside assistance'} service`,
         order_id: orderData.razorpayOrderId,
         handler: function (response) {

@@ -4,18 +4,18 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'RoadGuard API',
+      title: 'Fixora-X API',
       version: '1.0.0',
       description: 'Real-time roadside assistance platform API documentation',
       contact: {
-        name: 'RoadGuard Team',
-        email: 'support@roadguard.com'
+        name: 'Fixora-X Team',
+        email: 'support@fixora-x.com'
       }
     },
     servers: [
       {
         url: process.env.NODE_ENV === 'production' 
-          ? 'https://api.roadguard.com' 
+          ? 'https://api.fixora-x.com' 
           : `http://localhost:${process.env.PORT || 3001}`,
         description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server'
       }

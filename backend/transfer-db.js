@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongoose').mongo;
 
-const LOCAL_URI = 'mongodb://localhost:27017/roadguard';
-const REMOTE_URI = 'mongodb+srv://DeepVegad:143@cluster0.q8fenbd.mongodb.net/roadguard?appName=Cluster0';
+const LOCAL_URI = 'mongodb://localhost:27017/fixora-x';
+const REMOTE_URI = 'mongodb+srv://DeepVegad:143@cluster0.q8fenbd.mongodb.net/fixora-x?appName=Cluster0';
 
 async function transfer() {
   console.log('Connecting to databases...');

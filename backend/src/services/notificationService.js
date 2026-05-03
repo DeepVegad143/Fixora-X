@@ -11,11 +11,11 @@ class NotificationService {
     this.templates = {
       email: {
         welcome: {
-          subject: 'Welcome to RoadGuard',
+          subject: 'Welcome to Fixora-X',
           template: 'welcome.html'
         },
         otp: {
-          subject: 'Your RoadGuard OTP',
+          subject: 'Your Fixora-X OTP',
           template: 'otp.html'
         },
         requestCreated: {
@@ -40,7 +40,7 @@ class NotificationService {
         }
       },
       sms: {
-        otp: 'Your RoadGuard OTP is: {{code}}. Valid for 10 minutes.',
+        otp: 'Your Fixora-X OTP is: {{code}}. Valid for 10 minutes.',
         requestCreated: 'Your service request has been created. Request ID: {{requestId}}',
         mechanicAssigned: 'Mechanic {{mechanicName}} has been assigned to your request {{requestId}}',
         mechanicEnroute: 'Your mechanic is on the way! ETA: {{eta}} minutes',
@@ -123,7 +123,7 @@ class NotificationService {
       const htmlContent = this.generateEmailHTML(template, data);
 
       const mailOptions = {
-        from: `"RoadGuard" <${process.env.EMAIL_USER}>`,
+        from: `"Fixora-X" <${process.env.EMAIL_USER}>`,
         to,
         subject,
         html: htmlContent,
@@ -507,7 +507,7 @@ class NotificationService {
             requestId: serviceRequest._id,
             issueType: serviceRequest.issueType,
             reason: reason || 'No reason provided',
-            supportEmail: process.env.SUPPORT_EMAIL || 'support@roadguard.com'
+            supportEmail: process.env.SUPPORT_EMAIL || 'support@fixora-x.com'
           }
         })
       );
@@ -560,12 +560,12 @@ class NotificationService {
     
     const templates = {
       welcome: `
-        <h2>Welcome to RoadGuard, {{name}}!</h2>
+        <h2>Welcome to Fixora-X, {{name}}!</h2>
         <p>Your account has been created successfully.</p>
         <p>Get roadside assistance whenever you need it.</p>
       `,
       otp: `
-        <h2>Your RoadGuard OTP</h2>
+        <h2>Your Fixora-X OTP</h2>
         <p>Your verification code is: <strong>{{code}}</strong></p>
         <p>This code expires in {{expiresIn}}.</p>
       `,
@@ -590,7 +590,7 @@ class NotificationService {
         <p>Hi {{customerName}},</p>
         <p>Payment of ₹{{amount}} has been processed successfully.</p>
         <p><strong>Receipt Number:</strong> {{receipt}}</p>
-        <p>Thank you for using RoadGuard!</p>
+        <p>Thank you for using Fixora-X!</p>
       `
     };
 
@@ -616,7 +616,7 @@ class NotificationService {
         <body>
           ${html}
           <div class="footer">
-            <p>This is an automated message from RoadGuard. Please do not reply.</p>
+            <p>This is an automated message from Fixora-X. Please do not reply.</p>
           </div>
         </body>
       </html>

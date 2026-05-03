@@ -313,7 +313,7 @@ const verifyPayment = async (req, res) => {
         // Notify customer
         await notificationService.sendEmail(
           req.user.email,
-          'Payment Successful - RoadGuard',
+          'Payment Successful - Fixora-X',
           'payment-success',
           {
             customerName: req.user.name,
@@ -327,7 +327,7 @@ const verifyPayment = async (req, res) => {
         // Notify mechanic
         await notificationService.sendEmail(
           payment.requestId.mechanicId.email,
-          'Payment Received - RoadGuard',
+          'Payment Received - Fixora-X',
           'payment-received',
           {
             mechanicName: payment.requestId.mechanicId.name,

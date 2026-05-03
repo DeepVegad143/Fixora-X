@@ -126,7 +126,7 @@ const register = asyncHandler(async (req, res) => {
   try {
     await notificationService.sendEmail({
       to: user.email,
-      subject: 'Welcome to RoadGuard',
+      subject: 'Welcome to Fixora-X',
       template: 'welcome',
       data: { name: user.name }
     });
