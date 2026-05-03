@@ -87,10 +87,4 @@ This document provides a detailed overview of **Fixora-X**, a real-time roadside
 
 ---
 
-## 6. Common Viva Questions (Preparation)
-1.  **How do you find "nearby" mechanics?**
-    *   *Answer*: We use MongoDB's `2dsphere` index and `$near` operator to query mechanics within a specific radius (e.g., 5km-10km) of the customer's coordinates.
-2.  **How is data security handled?**
-    *   *Answer*: Passwords are never stored in plain text (Bcrypt). API routes are protected using JWT middleware, and sensitive keys are stored in environment variables (`.env`).
-3.  **What happens if the internet disconnects during a request?**
-    *   *Answer*: Socket.io has built-in reconnection logic. The app state is persisted in the database, so the user can resume the flow once the connection is restored.
+
